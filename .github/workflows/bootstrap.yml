@@ -1,0 +1,43 @@
+name: Publish RFShield LPF source
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - bootstrap/READY
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconstruct verified source archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat bootstrap/part-*.b64 > /tmp/rfshield-source.b64
+          test "$(wc -c < /tmp/rfshield-source.b64)" -eq 147152
+          base64 --decode /tmp/rfshield-source.b64 > /tmp/RFShield-LPF-v1.0.0-source.zip
+          echo "eb186c1d36f97365340d8016a5783d076497a5ec8f4e74cc882c371beb1f68ff  /tmp/RFShield-LPF-v1.0.0-source.zip" | sha256sum --check --strict
+
+      - name: Publish repository tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          unzip -o /tmp/RFShield-LPF-v1.0.0-source.zip -d .
+          rm -rf bootstrap
+          rm -f .github/workflows/bootstrap.yml
+          rmdir .github/workflows 2>/dev/null || true
+          rmdir .github 2>/dev/null || true
+          git config user.name "RFShield LPF Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish RFShield LPF v1.0.0 engineering project"
+          git push
