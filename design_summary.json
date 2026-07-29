@@ -1,0 +1,37 @@
+{
+  "project": "CEM_RF_LPF_500_FINAL",
+  "revision": "REV_B",
+  "created_at": "2026-07-29T17:21:37.890946",
+  "selected_values": {
+    "L1_L7_nH": 8.2,
+    "L3_L5_nH": 15.0,
+    "C2_C6_pF": 4.3,
+    "C4_pF": 4.3
+  },
+  "metrics": {
+    "passband_worst_il_db": 0.40839984388418343,
+    "passband_worst_rl_db": 23.369585521237166,
+    "attenuation_1ghz_db": 30.836644567101825,
+    "s21_108mhz_db": -0.1665180061084362,
+    "s21_500mhz_db": -0.4088627569443592,
+    "s11_500mhz_db": -36.02446324213848,
+    "passband_ripple_db": 0.24175592009178484
+  },
+  "monte_carlo": {
+    "runs": 400,
+    "pass_percent": 100.0,
+    "il_db_p95": 0.4145315427668089,
+    "rl_db_p05": 22.161402192086467,
+    "att_1ghz_db_p05": 30.097547154916064
+  },
+  "stackup": {
+    "pcb_thickness_mm": 1.6,
+    "dielectric_height_mm": 1.53,
+    "copper_thickness_um": 35.0,
+    "er": 4.3,
+    "loss_tangent": 0.018,
+    "calculated_50ohm_width_mm": 2.999516204403815,
+    "calculated_z0_ohm": 49.99999999999999,
+    "effective_er": 3.2683207835442096
+  }
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "score": 1.8753552956285187,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 15.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.40839984388418343,
+    "passband_worst_rl_db": 23.369585521237166,
+    "attenuation_1ghz_db": 30.836644567101825,
+    "passband_ripple_db": 0.24175592009178484
+  },
+  {
+    "score": 1.9122242296303589,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 16.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.41796437129974573,
+    "passband_worst_rl_db": 21.310747192056336,
+    "attenuation_1ghz_db": 32.3577439908196,
+    "passband_ripple_db": 0.2403667444313759
+  },
+  {
+    "score": 1.9533263378411214,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 16.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.7,
+    "passband_worst_il_db": 0.4253972255092106,
+    "passband_worst_rl_db": 22.55032708914948,
+    "attenuation_1ghz_db": 33.7512582322367,
+    "passband_ripple_db": 0.25173743580427904
+  },
+  {
+    "score": 1.9574002037889926,
+    "outer_l_nh": 9.1,
+    "inner_l_nh": 16.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.4286917581202857,
+    "passband_worst_rl_db": 20.541180490403114,
+    "attenuation_1ghz_db": 33.3540907647816,
+    "passband_ripple_db": 0.2426331713078499
+  },
+  {
+    "score": 1.97270017899901,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 15.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.7,
+    "passband_worst_il_db": 0.42724142843789364,
+    "passband_worst_rl_db": 21.06088601836291,
+    "attenuation_1ghz_db": 32.284591096262794,
+    "passband_ripple_db": 0.2637344652474355
+  },
+  {
+    "score": 1.9831227608435409,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 15.0,
+    "outer_c_pf": 4.7,
+    "center_c_pf": 4.7,
+    "passband_worst_il_db": 0.42847239484463945,
+    "passband_worst_rl_db": 23.91749731845852,
+    "attenuation_1ghz_db": 34.97693538992481,
+    "passband_ripple_db": 0.26923318146498315
+  },
+  {
+    "score": 1.9879374488105739,
+    "outer_l_nh": 9.1,
+    "inner_l_nh": 15.0,
+    "outer_c_pf": 4.7,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.4312082288806325,
+    "passband_worst_rl_db": 22.454516328946767,
+    "attenuation_1ghz_db": 34.55450357401738,
+    "passband_ripple_db": 0.26310453328804395
+  },
+  {
+    "score": 2.001807862150587,
+    "outer_l_nh": 9.1,
+    "inner_l_nh": 15.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.4352052773019239,
+    "passband_worst_rl_db": 19.913617810380792,
+    "attenuation_1ghz_db": 31.830707242544108,
+    "passband_ripple_db": 0.26098675294289153
+  },
+  {
+    "score": 2.0093395344262137,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 15.0,
+    "outer_c_pf": 4.7,
+    "center_c_pf": 5.1,
+    "passband_worst_il_db": 0.43333616364012184,
+    "passband_worst_rl_db": 20.596829140667978,
+    "attenuation_1ghz_db": 36.305151553894135,
+    "passband_ripple_db": 0.2759948798657262
+  },
+  {
+    "score": 2.0205484485944156,
+    "outer_l_nh": 9.1,
+    "inner_l_nh": 18.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.44683655185667415,
+    "passband_worst_rl_db": 17.736951782961167,
+    "attenuation_1ghz_db": 36.03658762716425,
+    "passband_ripple_db": 0.23320224116771898
+  },
+  {
+    "score": 2.0251853082852493,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 15.0,
+    "outer_c_pf": 4.7,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.4373531398277259,
+    "passband_worst_rl_db": 24.625859821923996,
+    "attenuation_1ghz_db": 33.5498660627591,
+    "passband_ripple_db": 0.2757727489743456
+  },
+  {
+    "score": 2.026427211017572,
+    "outer_l_nh": 9.1,
+    "inner_l_nh": 15.0,
+    "outer_c_pf": 4.7,
+    "center_c_pf": 4.7,
+    "passband_worst_il_db": 0.4383239418665091,
+    "passband_worst_rl_db": 19.512896788141543,
+    "attenuation_1ghz_db": 35.982180886516616,
+    "passband_ripple_db": 0.27313144355153557
+  },
+  {
+    "score": 2.0291786929573625,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 18.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.7,
+    "passband_worst_il_db": 0.4454251041962697,
+    "passband_worst_rl_db": 19.10738766153325,
+    "attenuation_1ghz_db": 36.34857364796214,
+    "passband_ripple_db": 0.247478276172284
+  },
+  {
+    "score": 2.039159642226641,
+    "outer_l_nh": 10.0,
+    "inner_l_nh": 18.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.45269795260256207,
+    "passband_worst_rl_db": 17.323759653424872,
+    "attenuation_1ghz_db": 37.04570051489271,
+    "passband_ripple_db": 0.22836783181639256
+  },
+  {
+    "score": 2.0518236106683108,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 16.0,
+    "outer_c_pf": 4.7,
+    "center_c_pf": 5.1,
+    "passband_worst_il_db": 0.4434390262159282,
+    "passband_worst_rl_db": 24.25100865866598,
+    "attenuation_1ghz_db": 37.68567549768408,
+    "passband_ripple_db": 0.27806750580459805
+  },
+  {
+    "score": 2.0539574726643854,
+    "outer_l_nh": 9.1,
+    "inner_l_nh": 18.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 4.7,
+    "passband_worst_il_db": 0.45229098122064654,
+    "passband_worst_rl_db": 18.61950021918506,
+    "attenuation_1ghz_db": 37.3486750865586,
+    "passband_ripple_db": 0.2447935477817993
+  },
+  {
+    "score": 2.053973726306463,
+    "outer_l_nh": 10.0,
+    "inner_l_nh": 15.0,
+    "outer_c_pf": 4.7,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.44584676737543616,
+    "passband_worst_rl_db": 18.486192470199782,
+    "attenuation_1ghz_db": 35.56354230580142,
+    "passband_ripple_db": 0.2705866568047184
+  },
+  {
+    "score": 2.0541533800545264,
+    "outer_l_nh": 9.1,
+    "inner_l_nh": 16.0,
+    "outer_c_pf": 4.7,
+    "center_c_pf": 4.7,
+    "passband_worst_il_db": 0.4458123868531308,
+    "passband_worst_rl_db": 22.776133868435416,
+    "attenuation_1ghz_db": 37.40423783248662,
+    "passband_ripple_db": 0.2709038326420034
+  },
+  {
+    "score": 2.0634268564503033,
+    "outer_l_nh": 10.0,
+    "inner_l_nh": 16.0,
+    "outer_c_pf": 4.7,
+    "center_c_pf": 4.3,
+    "passband_worst_il_db": 0.450013009787673,
+    "passband_worst_rl_db": 21.35746360279321,
+    "attenuation_1ghz_db": 37.0367018299676,
+    "passband_ripple_db": 0.2633748172996112
+  },
+  {
+    "score": 2.0816552520160654,
+    "outer_l_nh": 8.2,
+    "inner_l_nh": 18.0,
+    "outer_c_pf": 4.3,
+    "center_c_pf": 5.1,
+    "passband_worst_il_db": 0.4549017047900141,
+    "passband_worst_rl_db": 20.140257545573274,
+    "attenuation_1ghz_db": 37.5838756228935,
+    "passband_ripple_db": 0.2620484328560089
+  }
+]

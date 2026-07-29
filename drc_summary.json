@@ -1,0 +1,7 @@
+{
+  "return_code": 5,
+  "violations": 20,
+  "unconnected_items": 0,
+  "stdout": "Found 20 violations\nFound 0 unconnected items\nSaved DRC Report to C:\\Users\\CEM\\Desktop\\CEM_RF_LPF_500_FINAL\\reports\\drc_report.json\n",
+  "stderr": ""
+}

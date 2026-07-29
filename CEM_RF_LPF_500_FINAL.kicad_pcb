@@ -1,0 +1,2330 @@
+(kicad_pcb
+    (version 20240108)
+    (generator "cem_rf_lpf_final")
+
+    (general
+        (thickness 1.6)
+    )
+
+    (paper "A4")
+
+    (layers
+        (0 "F.Cu" signal)
+        (31 "B.Cu" signal)
+        (32 "B.Adhes" user "b.adhesive")
+        (33 "F.Adhes" user "f.adhesive")
+        (34 "B.Paste" user)
+        (35 "F.Paste" user)
+        (36 "B.SilkS" user "b.silkscreen")
+        (37 "F.SilkS" user "f.silkscreen")
+        (38 "B.Mask" user)
+        (39 "F.Mask" user)
+        (44 "Edge.Cuts" user)
+        (46 "B.CrtYd" user "b.courtyard")
+        (47 "F.CrtYd" user "f.courtyard")
+        (48 "B.Fab" user)
+        (49 "F.Fab" user)
+    )
+
+    (setup
+        (pad_to_mask_clearance 0)
+        (allow_soldermask_bridges_in_footprints no)
+    )
+
+    (net 0 "")
+    (net 1 "GND")
+    (net 2 "RF_IN")
+    (net 3 "N1")
+    (net 4 "N2")
+    (net 5 "N3")
+    (net 6 "RF_OUT")
+
+    
+    (footprint "CUSTOM:SMA_AMPHENOL_132134_10"
+        (layer "F.Cu")
+        (at 28 45 0)
+        (attr smd)
+        
+        
+        (fp_text reference "J1"
+            (at 0 -4.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+        
+        (fp_text value "132134-10"
+            (at 0 4.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+
+        (fp_line
+            (start -3.355 -0.94)
+            (end -3.355 0.94)
+            (stroke (width 0.12) (type default))
+            (layer "F.SilkS")
+        )
+
+        (fp_line
+            (start 3.355 -0.94)
+            (end 3.355 0.94)
+            (stroke (width 0.12) (type default))
+            (layer "F.SilkS")
+        )
+
+        (fp_rect
+            (start -3.175 -3.175)
+            (end 3.175 3.175)
+            (stroke (width 0.10) (type default))
+            (fill none)
+            (layer "F.Fab")
+        )
+
+        (fp_rect
+            (start -4.06 -4.06)
+            (end 4.06 4.06)
+            (stroke (width 0.05) (type default))
+            (fill none)
+            (layer "F.CrtYd")
+        )
+
+        (pad "1" smd circle
+            (at 0 0)
+            (size 1.73 1.73)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (net 2 "RF_IN")
+            (pinfunction "RF")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0 -2.8)
+            (size 7.11 1.51)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.08)
+            (net 1 "GND")
+            (pinfunction "GND")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0 2.8)
+            (size 7.11 1.51)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.08)
+            (net 1 "GND")
+            (pinfunction "GND")
+            (pintype "passive")
+        )
+    
+    )
+    
+    (footprint "CUSTOM:RF_0603"
+        (layer "F.Cu")
+        (at 39 45 0)
+        (attr smd)
+        
+        
+        (fp_text reference "L1"
+            (at 0 -1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+        
+        (fp_text value "8.2nH"
+            (at 0 1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+
+        (fp_rect
+            (start -0.90 -0.55)
+            (end 0.90 0.55)
+            (stroke (width 0.10) (type default))
+            (fill none)
+            (layer "F.Fab")
+        )
+
+        (fp_rect
+            (start -1.40 -0.90)
+            (end 1.40 0.90)
+            (stroke (width 0.05) (type default))
+            (fill none)
+            (layer "F.CrtYd")
+        )
+
+        (pad "1" smd roundrect
+            (at -0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 2 "RF_IN")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 3 "N1")
+            (pintype "passive")
+        )
+    
+    )
+    
+    (footprint "CUSTOM:RF_0603"
+        (layer "F.Cu")
+        (at 45 49.5 0)
+        (attr smd)
+        
+        
+        (fp_text reference "C2"
+            (at 0 -1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+        
+        (fp_text value "4.3pF"
+            (at 0 1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+
+        (fp_rect
+            (start -0.90 -0.55)
+            (end 0.90 0.55)
+            (stroke (width 0.10) (type default))
+            (fill none)
+            (layer "F.Fab")
+        )
+
+        (fp_rect
+            (start -1.40 -0.90)
+            (end 1.40 0.90)
+            (stroke (width 0.05) (type default))
+            (fill none)
+            (layer "F.CrtYd")
+        )
+
+        (pad "1" smd roundrect
+            (at -0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 3 "N1")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 1 "GND")
+            (pintype "passive")
+        )
+    
+    )
+    
+    (footprint "CUSTOM:RF_0603"
+        (layer "F.Cu")
+        (at 51 45 0)
+        (attr smd)
+        
+        
+        (fp_text reference "L3"
+            (at 0 -1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+        
+        (fp_text value "15nH"
+            (at 0 1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+
+        (fp_rect
+            (start -0.90 -0.55)
+            (end 0.90 0.55)
+            (stroke (width 0.10) (type default))
+            (fill none)
+            (layer "F.Fab")
+        )
+
+        (fp_rect
+            (start -1.40 -0.90)
+            (end 1.40 0.90)
+            (stroke (width 0.05) (type default))
+            (fill none)
+            (layer "F.CrtYd")
+        )
+
+        (pad "1" smd roundrect
+            (at -0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 3 "N1")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 4 "N2")
+            (pintype "passive")
+        )
+    
+    )
+    
+    (footprint "CUSTOM:RF_0603"
+        (layer "F.Cu")
+        (at 57 49.5 0)
+        (attr smd)
+        
+        
+        (fp_text reference "C4"
+            (at 0 -1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+        
+        (fp_text value "4.3pF"
+            (at 0 1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+
+        (fp_rect
+            (start -0.90 -0.55)
+            (end 0.90 0.55)
+            (stroke (width 0.10) (type default))
+            (fill none)
+            (layer "F.Fab")
+        )
+
+        (fp_rect
+            (start -1.40 -0.90)
+            (end 1.40 0.90)
+            (stroke (width 0.05) (type default))
+            (fill none)
+            (layer "F.CrtYd")
+        )
+
+        (pad "1" smd roundrect
+            (at -0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 4 "N2")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 1 "GND")
+            (pintype "passive")
+        )
+    
+    )
+    
+    (footprint "CUSTOM:RF_0603"
+        (layer "F.Cu")
+        (at 63 45 0)
+        (attr smd)
+        
+        
+        (fp_text reference "L5"
+            (at 0 -1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+        
+        (fp_text value "15nH"
+            (at 0 1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+
+        (fp_rect
+            (start -0.90 -0.55)
+            (end 0.90 0.55)
+            (stroke (width 0.10) (type default))
+            (fill none)
+            (layer "F.Fab")
+        )
+
+        (fp_rect
+            (start -1.40 -0.90)
+            (end 1.40 0.90)
+            (stroke (width 0.05) (type default))
+            (fill none)
+            (layer "F.CrtYd")
+        )
+
+        (pad "1" smd roundrect
+            (at -0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 4 "N2")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 5 "N3")
+            (pintype "passive")
+        )
+    
+    )
+    
+    (footprint "CUSTOM:RF_0603"
+        (layer "F.Cu")
+        (at 69 49.5 0)
+        (attr smd)
+        
+        
+        (fp_text reference "C6"
+            (at 0 -1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+        
+        (fp_text value "4.3pF"
+            (at 0 1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+
+        (fp_rect
+            (start -0.90 -0.55)
+            (end 0.90 0.55)
+            (stroke (width 0.10) (type default))
+            (fill none)
+            (layer "F.Fab")
+        )
+
+        (fp_rect
+            (start -1.40 -0.90)
+            (end 1.40 0.90)
+            (stroke (width 0.05) (type default))
+            (fill none)
+            (layer "F.CrtYd")
+        )
+
+        (pad "1" smd roundrect
+            (at -0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 5 "N3")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 1 "GND")
+            (pintype "passive")
+        )
+    
+    )
+    
+    (footprint "CUSTOM:RF_0603"
+        (layer "F.Cu")
+        (at 75 45 0)
+        (attr smd)
+        
+        
+        (fp_text reference "L7"
+            (at 0 -1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+        
+        (fp_text value "8.2nH"
+            (at 0 1.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+
+        (fp_rect
+            (start -0.90 -0.55)
+            (end 0.90 0.55)
+            (stroke (width 0.10) (type default))
+            (fill none)
+            (layer "F.Fab")
+        )
+
+        (fp_rect
+            (start -1.40 -0.90)
+            (end 1.40 0.90)
+            (stroke (width 0.05) (type default))
+            (fill none)
+            (layer "F.CrtYd")
+        )
+
+        (pad "1" smd roundrect
+            (at -0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 5 "N3")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0.75 0)
+            (size 0.90 1.10)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.18)
+            (net 6 "RF_OUT")
+            (pintype "passive")
+        )
+    
+    )
+    
+    (footprint "CUSTOM:SMA_AMPHENOL_132134_10"
+        (layer "F.Cu")
+        (at 86 45 0)
+        (attr smd)
+        
+        
+        (fp_text reference "J2"
+            (at 0 -4.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+        
+        (fp_text value "132134-10"
+            (at 0 4.8 0)
+            (layer "F.Fab")
+            hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+    
+
+        (fp_line
+            (start -3.355 -0.94)
+            (end -3.355 0.94)
+            (stroke (width 0.12) (type default))
+            (layer "F.SilkS")
+        )
+
+        (fp_line
+            (start 3.355 -0.94)
+            (end 3.355 0.94)
+            (stroke (width 0.12) (type default))
+            (layer "F.SilkS")
+        )
+
+        (fp_rect
+            (start -3.175 -3.175)
+            (end 3.175 3.175)
+            (stroke (width 0.10) (type default))
+            (fill none)
+            (layer "F.Fab")
+        )
+
+        (fp_rect
+            (start -4.06 -4.06)
+            (end 4.06 4.06)
+            (stroke (width 0.05) (type default))
+            (fill none)
+            (layer "F.CrtYd")
+        )
+
+        (pad "1" smd circle
+            (at 0 0)
+            (size 1.73 1.73)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (net 6 "RF_OUT")
+            (pinfunction "RF")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0 -2.8)
+            (size 7.11 1.51)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.08)
+            (net 1 "GND")
+            (pinfunction "GND")
+            (pintype "passive")
+        )
+
+        (pad "2" smd roundrect
+            (at 0 2.8)
+            (size 7.11 1.51)
+            (layers "F.Cu" "F.Paste" "F.Mask")
+            (roundrect_rratio 0.08)
+            (net 1 "GND")
+            (pinfunction "GND")
+            (pintype "passive")
+        )
+    
+    )
+    
+
+    
+    (gr_rect
+        (start 20 20)
+        (end 94 70)
+        (stroke (width 0.20) (type default))
+        (fill none)
+        (layer "Edge.Cuts")
+    )
+    
+    
+    (gr_text "CEM RF LPF 108-500 MHz REV_B"
+        (at 57 24.2 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 1.6 1.6)
+                (thickness 0.27)
+            )
+        )
+    )
+    
+    (gr_text "50 OHM W=3.00mm  B.Cu SOLID GND"
+        (at 57 27.4 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 1.05 1.05)
+                (thickness 0.18)
+            )
+        )
+    )
+    
+    (gr_text "J1 132134-10"
+        (at 28 34.8 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 0.95 0.95)
+                (thickness 0.17)
+            )
+        )
+    )
+    
+    (gr_text "L1 8.2nH"
+        (at 39 34.8 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 0.95 0.95)
+                (thickness 0.17)
+            )
+        )
+    )
+    
+    (gr_text "L3 15nH"
+        (at 51 34.8 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 0.95 0.95)
+                (thickness 0.17)
+            )
+        )
+    )
+    
+    (gr_text "L5 15nH"
+        (at 63 34.8 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 0.95 0.95)
+                (thickness 0.17)
+            )
+        )
+    )
+    
+    (gr_text "L7 8.2nH"
+        (at 75 34.8 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 0.95 0.95)
+                (thickness 0.17)
+            )
+        )
+    )
+    
+    (gr_text "J2 132134-10"
+        (at 86 34.8 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 0.95 0.95)
+                (thickness 0.17)
+            )
+        )
+    )
+    
+    (gr_text "C2 4.3pF"
+        (at 45 58.5 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 0.95 0.95)
+                (thickness 0.17)
+            )
+        )
+    )
+    
+    (gr_text "C4 4.3pF"
+        (at 57 58.5 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 0.95 0.95)
+                (thickness 0.17)
+            )
+        )
+    )
+    
+    (gr_text "C6 4.3pF"
+        (at 69 58.5 0)
+        (layer "F.SilkS")
+        (effects
+            (font
+                (size 0.95 0.95)
+                (thickness 0.17)
+            )
+        )
+    )
+    
+
+    
+    (segment
+        (start 21 21)
+        (end 21 69)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 93 21)
+        (end 93 69)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 21)
+        (end 93 21)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 21.5)
+        (end 93 21.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 22)
+        (end 93 22)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 22.5)
+        (end 93 22.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 23)
+        (end 93 23)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 23.5)
+        (end 93 23.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 24)
+        (end 93 24)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 24.5)
+        (end 93 24.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 25)
+        (end 93 25)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 25.5)
+        (end 93 25.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 26)
+        (end 93 26)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 26.5)
+        (end 93 26.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 27)
+        (end 93 27)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 27.5)
+        (end 93 27.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 28)
+        (end 93 28)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 28.5)
+        (end 93 28.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 29)
+        (end 93 29)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 29.5)
+        (end 93 29.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 30)
+        (end 93 30)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 30.5)
+        (end 93 30.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 31)
+        (end 93 31)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 31.5)
+        (end 93 31.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 32)
+        (end 93 32)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 32.5)
+        (end 93 32.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 33)
+        (end 93 33)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 33.5)
+        (end 93 33.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 34)
+        (end 93 34)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 34.5)
+        (end 93 34.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 35)
+        (end 93 35)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 35.5)
+        (end 93 35.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 36)
+        (end 93 36)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 36.5)
+        (end 93 36.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 37)
+        (end 93 37)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 37.5)
+        (end 93 37.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 38)
+        (end 93 38)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 38.5)
+        (end 93 38.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 39)
+        (end 93 39)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 39.5)
+        (end 93 39.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 40)
+        (end 93 40)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 40.5)
+        (end 93 40.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 41)
+        (end 93 41)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 41.5)
+        (end 93 41.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 42)
+        (end 93 42)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 42.5)
+        (end 93 42.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 43)
+        (end 93 43)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 43.5)
+        (end 93 43.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 44)
+        (end 93 44)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 44.5)
+        (end 93 44.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 45)
+        (end 93 45)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 45.5)
+        (end 93 45.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 46)
+        (end 93 46)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 46.5)
+        (end 93 46.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 47)
+        (end 93 47)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 47.5)
+        (end 93 47.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 48)
+        (end 93 48)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 48.5)
+        (end 93 48.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 49)
+        (end 93 49)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 49.5)
+        (end 93 49.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 50)
+        (end 93 50)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 50.5)
+        (end 93 50.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 51)
+        (end 93 51)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 51.5)
+        (end 93 51.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 52)
+        (end 93 52)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 52.5)
+        (end 93 52.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 53)
+        (end 93 53)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 53.5)
+        (end 93 53.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 54)
+        (end 93 54)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 54.5)
+        (end 93 54.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 55)
+        (end 93 55)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 55.5)
+        (end 93 55.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 56)
+        (end 93 56)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 56.5)
+        (end 93 56.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 57)
+        (end 93 57)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 57.5)
+        (end 93 57.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 58)
+        (end 93 58)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 58.5)
+        (end 93 58.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 59)
+        (end 93 59)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 59.5)
+        (end 93 59.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 60)
+        (end 93 60)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 60.5)
+        (end 93 60.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 61)
+        (end 93 61)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 61.5)
+        (end 93 61.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 62)
+        (end 93 62)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 62.5)
+        (end 93 62.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 63)
+        (end 93 63)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 63.5)
+        (end 93 63.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 64)
+        (end 93 64)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 64.5)
+        (end 93 64.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 65)
+        (end 93 65)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 65.5)
+        (end 93 65.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 66)
+        (end 93 66)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 66.5)
+        (end 93 66.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 67)
+        (end 93 67)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 67.5)
+        (end 93 67.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 68)
+        (end 93 68)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 68.5)
+        (end 93 68.5)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+
+    (segment
+        (start 21 69)
+        (end 93 69)
+        (width 0.65)
+        (layer "B.Cu")
+        (net 1)
+    )
+    
+    
+    (segment
+        (start 28 45)
+        (end 36.5 45)
+        (width 2.99952)
+        (layer "F.Cu")
+        (net 2)
+    )
+    
+    (segment
+        (start 36.5 45)
+        (end 38.25 45)
+        (width 0.55)
+        (layer "F.Cu")
+        (net 2)
+    )
+    
+    (segment
+        (start 39.75 45)
+        (end 41.5 45)
+        (width 0.55)
+        (layer "F.Cu")
+        (net 3)
+    )
+    
+    (segment
+        (start 41.5 45)
+        (end 48.5 45)
+        (width 2.99952)
+        (layer "F.Cu")
+        (net 3)
+    )
+    
+    (segment
+        (start 48.5 45)
+        (end 50.25 45)
+        (width 0.55)
+        (layer "F.Cu")
+        (net 3)
+    )
+    
+    (segment
+        (start 51.75 45)
+        (end 53.5 45)
+        (width 0.55)
+        (layer "F.Cu")
+        (net 4)
+    )
+    
+    (segment
+        (start 53.5 45)
+        (end 60.5 45)
+        (width 2.99952)
+        (layer "F.Cu")
+        (net 4)
+    )
+    
+    (segment
+        (start 60.5 45)
+        (end 62.25 45)
+        (width 0.55)
+        (layer "F.Cu")
+        (net 4)
+    )
+    
+    (segment
+        (start 63.75 45)
+        (end 65.5 45)
+        (width 0.55)
+        (layer "F.Cu")
+        (net 5)
+    )
+    
+    (segment
+        (start 65.5 45)
+        (end 72.5 45)
+        (width 2.99952)
+        (layer "F.Cu")
+        (net 5)
+    )
+    
+    (segment
+        (start 72.5 45)
+        (end 74.25 45)
+        (width 0.55)
+        (layer "F.Cu")
+        (net 5)
+    )
+    
+    (segment
+        (start 75.75 45)
+        (end 77.5 45)
+        (width 0.55)
+        (layer "F.Cu")
+        (net 6)
+    )
+    
+    (segment
+        (start 77.5 45)
+        (end 86 45)
+        (width 2.99952)
+        (layer "F.Cu")
+        (net 6)
+    )
+    
+    (segment
+        (start 45 45)
+        (end 45 47.2)
+        (width 0.6)
+        (layer "F.Cu")
+        (net 3)
+    )
+    
+    (segment
+        (start 45 47.2)
+        (end 44.25 49.5)
+        (width 0.6)
+        (layer "F.Cu")
+        (net 3)
+    )
+    
+    (segment
+        (start 45.75 49.5)
+        (end 46.8 49.5)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 46.8 49.5)
+        (end 47.9 49.5)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 46.8 49.5)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 47.9 49.5)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 57 45)
+        (end 57 47.2)
+        (width 0.6)
+        (layer "F.Cu")
+        (net 4)
+    )
+    
+    (segment
+        (start 57 47.2)
+        (end 56.25 49.5)
+        (width 0.6)
+        (layer "F.Cu")
+        (net 4)
+    )
+    
+    (segment
+        (start 57.75 49.5)
+        (end 58.8 49.5)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 58.8 49.5)
+        (end 59.9 49.5)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 58.8 49.5)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 59.9 49.5)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 69 45)
+        (end 69 47.2)
+        (width 0.6)
+        (layer "F.Cu")
+        (net 5)
+    )
+    
+    (segment
+        (start 69 47.2)
+        (end 68.25 49.5)
+        (width 0.6)
+        (layer "F.Cu")
+        (net 5)
+    )
+    
+    (segment
+        (start 69.75 49.5)
+        (end 70.8 49.5)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 70.8 49.5)
+        (end 71.9 49.5)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 70.8 49.5)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 71.9 49.5)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 25.4 42.2)
+        (end 25.4 40.85)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 25.4 40.85)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 28 42.2)
+        (end 28 40.85)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 28 40.85)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 30.6 42.2)
+        (end 30.6 40.85)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 30.6 40.85)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 25.4 47.8)
+        (end 25.4 49.15)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 25.4 49.15)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 28 47.8)
+        (end 28 49.15)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 28 49.15)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 30.6 47.8)
+        (end 30.6 49.15)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 30.6 49.15)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 83.4 42.2)
+        (end 83.4 40.85)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 83.4 40.85)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 86 42.2)
+        (end 86 40.85)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 86 40.85)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 88.6 42.2)
+        (end 88.6 40.85)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 88.6 40.85)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 83.4 47.8)
+        (end 83.4 49.15)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 83.4 49.15)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 86 47.8)
+        (end 86 49.15)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 86 49.15)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (segment
+        (start 88.6 47.8)
+        (end 88.6 49.15)
+        (width 0.8)
+        (layer "F.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 88.6 49.15)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 33 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 33 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 38 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 38 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 43 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 43 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 48 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 48 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 53 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 53 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 58 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 58 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 63 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 63 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 68 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 68 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 73 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 73 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 78 38)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+    (via
+        (at 78 54)
+        (size 1)
+        (drill 0.5)
+        (layers "F.Cu" "B.Cu")
+        (net 1)
+    )
+    
+)

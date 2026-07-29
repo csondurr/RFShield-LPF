@@ -1,0 +1,311 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-07-29T17:21:39+0300",
+    "kicad_version": "9.0.7",
+    "schematic_parity": [],
+    "source": "CEM_RF_LPF_500_FINAL.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 38.0
+                    },
+                    "uuid": "9de88bde-f1d4-4a9e-8859-12a27c33d758"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 54.0
+                    },
+                    "uuid": "88d55dc6-44d7-4e24-b2bf-e90ee5b6cb17"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 38.0
+                    },
+                    "uuid": "8f4fcbb8-d234-4f0b-9fd8-b51fedbe23dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 54.0
+                    },
+                    "uuid": "df2424aa-eef3-42d2-b096-ea32caed9d0a"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 38.0
+                    },
+                    "uuid": "f7c256f4-fa93-4c4a-8f23-be576c245a22"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 54.0
+                    },
+                    "uuid": "222d8730-14eb-4e0b-9f4e-28b7298a7f24"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 38.0
+                    },
+                    "uuid": "6293e64b-5897-4f7b-a4a8-9c43f17e14b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 54.0
+                    },
+                    "uuid": "7d8b1d90-f8d4-4c30-8b49-d2eeb4be3df9"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 38.0
+                    },
+                    "uuid": "f5d10ba5-c5b6-4be4-ae0a-2a36769b4413"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 53.0,
+                        "y": 54.0
+                    },
+                    "uuid": "9639a88c-51e6-4821-93cd-92e46a4289e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 38.0
+                    },
+                    "uuid": "7ef00001-c0c0-456d-8fcf-e94ee967cb42"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 54.0
+                    },
+                    "uuid": "b2fc5b23-735e-4ad2-885f-f9fae2506f1d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 38.0
+                    },
+                    "uuid": "38208998-dddc-4c7b-af2a-a764ab948ace"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 54.0
+                    },
+                    "uuid": "8d1868cf-a35d-4a2b-9862-537797566fd6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 38.0
+                    },
+                    "uuid": "e08557e1-4a81-4f0b-be9e-1248790ca286"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 54.0
+                    },
+                    "uuid": "98ec222b-e2c3-4233-9d81-67a1ed364355"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 38.0
+                    },
+                    "uuid": "3fe73005-7266-4879-a9e1-00dc830d2845"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 54.0
+                    },
+                    "uuid": "8e37bc87-f3ab-400e-b02e-514acc9f0d00"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 78.0,
+                        "y": 38.0
+                    },
+                    "uuid": "0b32363c-78eb-45b0-8ed4-1c3465a9a01b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 78.0,
+                        "y": 54.0
+                    },
+                    "uuid": "7d43725f-d598-46ba-bffb-a779d4572e15"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}
